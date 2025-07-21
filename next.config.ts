@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
-  }
+  },
+  basePath: process.env.NODE_ENV === 'production' ? '/yuya108.github.io' : ''
 };
 
 export default nextConfig;
